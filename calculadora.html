@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Calculadora</title>
+	<header>
+   		<h1>-------------Calculadora------------</h1>
+	<script>
+function calculo(operaciones){
+    var n1 = document.calculadora.n1.value
+    var n2 = document.calculadora.n2.value 
+    var result = eval(n1 + operaciones + n2)
+    document.calculadora.resultado.value = result
+}
+</script> 
+<form name="calculadora">
+	valor 1: <input type="Text" name="n1" value="" size="12">
+	valor 2: <input type="Text" name="n2" value="" size="12">
+
+	<input type="Button" name="Suma" value=" + " onclick="calculo('+')">
+	<input type="Button" name="Resta" value=" - " onclick="calculo('-')">
+	<input type="Button" name="Multiplicaion" value=" X " onclick="calculo('*')">
+	<input type="Button" name="Divicion" value=" / " onclick="calculo('/')"><br>
+	Resultado :<input type="Text" name="resultado" value="" size="12">
+</form>
+<header>
+	
+		Elaborado:Marling Kelineth Gutierrez Guzman<br>
+		Profesor:Enmanuel Jarquin<br>
+		Clase:Progrmacion Grafica<br>
+	
+</header>
+</head>
+</html>
